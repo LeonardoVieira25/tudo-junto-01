@@ -1,9 +1,10 @@
-import aprovacao.Aluno;
 
 public class Main {
     public static void main(String[] args) {
-        Aluno aluno = new Aluno();
-        aluno.setFrequencia(10);
-        System.out.println("Frequência: " + aluno.getFrequencia());
+        Contrato contratoCarro = new Contrato(new FabricaCarro());
+        System.out.println(contratoCarro.emitirApolice());
+        
+        Contrato contratoMoto = new Contrato(new FabricaMoto());
+        System.out.println(contratoMoto.emitirApolice());
     }
 }
