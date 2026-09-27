@@ -1,3 +1,3 @@
 public interface Seguro {
-    String emitirApolice();
+    double calcularPremio();
 }

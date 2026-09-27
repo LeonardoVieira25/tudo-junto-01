@@ -1,10 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Contrato contratoCarro = new Contrato(new FabricaCarro());
-        System.out.println(contratoCarro.emitirApolice());
-        
-        Contrato contratoMoto = new Contrato(new FabricaMoto());
-        System.out.println(contratoMoto.emitirApolice());
+        Contrato contratoBasico = new ContratoBasico(new FabricaCarro());
+        System.out.println(contratoBasico.calcularPremio());
+
+        Contrato contratoPremium = new ContratoPremium(new FabricaCarro());
+        System.out.println(contratoPremium.calcularPremio());
     }
 }
